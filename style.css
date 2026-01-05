@@ -1,0 +1,59 @@
+ .background {
+     background-color: black;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding-top: 2vh;
+ }
+
+ .title {
+     color: white;
+     text-align: center;
+     /* medium heading size that scales */
+     font-size: clamp(1.25rem, 3.2vmin, 1.75rem);
+     margin-top: 0.5rem;
+ }
+
+ .display {
+    color: white;
+    /* medium size for player label */
+    font-size: clamp(0.9rem, 2.2vmin, 1.1rem);
+    text-align: center;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.hide {
+    display: none;
+}
+
+ .container {
+     margin: 0.75rem auto;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 6px;
+     /* responsive square grid, slightly smaller max width for medium look */
+     width: min(70vmin, 360px);
+     aspect-ratio: 1 / 1;
+ }
+
+ .tile {
+     border: 2px solid white;
+     background: transparent;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     /* keep each tile square and scale with the grid */
+     aspect-ratio: 1 / 1;
+     font-size: clamp(1.25rem, 4.5vmin, 3rem);
+     user-select: none;
+ }
+
+.playerX {
+    color: #09C372
+}
+
+.playerO {
+    color: #498AF8;
+}
